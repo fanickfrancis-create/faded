@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FADED Login</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .login-box{
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            width:300px;
+            text-align:center;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        input{
+            width:90%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            background:black;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h1>FADED</h1>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+</div>
+
+<script>
+function login(){
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if(username === "faded" && password === "1234"){
+        window.location.href = "store.html";
+    }
+    else{
+        alert("Wrong Username or Password");
+    }
+}
+</script>
+
+</body>
+</html>
+<html>
+ <header>
+    <body>
+            <style>
+            body{
+                background-image:
+                url("faded logo.jpeg");
+                    background-size: cover;
+                    background-position:center;
+                    background-repeat:
+                no-repeat;
+                    height:100vh;
+                    margin: 10;
+            }
+            </style>
+ </header>
+        </body>
+ </html>
